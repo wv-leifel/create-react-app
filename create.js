@@ -187,13 +187,13 @@ module.exports = function(api, opts, env) {
           absoluteRuntime: absoluteRuntimePath,
         },
       ],
-      isEnvProduction && [
+      /*isEnvProduction && [
         // Remove PropTypes from production build
         require('babel-plugin-transform-react-remove-prop-types').default,
         {
           removeImport: true,
         },
-      ],
+      ],*/
       // Adds syntax support for import()
       require('@babel/plugin-syntax-dynamic-import').default,
       // Adds syntax support for optional chaining (?.)
